@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <script src="underscore.js"></script>
+</head>
+<body>
+
+
+<script>
+
+    var x = [
+        {name:'John',age:22,gender:'M'},
+        {name:'Mike',age:30,gender:'M'},
+        {name:'Rachel',age:20,gender:'F'}
+    ];
+
+    _.each(x,function(element,index,list){
+        console.log("element : "+JSON.stringify(element));
+        console.log("index : "+index)
+        console.log("list : "+JSON.stringify(list))
+    });
+
+
+    var x = [
+        {name:'John',age:22,gender:'M'},
+        {name:'Mike',age:30,gender:'M'},
+        {name:'Rachel',age:20,gender:'F'}
+    ];
+
+    var result =_.each(x,function(element,index,list){
+        element.age = element.age *2;
+    });
+
+    console.log("original"+JSON.stringify(x));
+    console.log("result"+JSON.stringify(result));
+
+    var x = [
+        {name:'John',age:22,gender:'M'},
+        {name:'Mike',age:30,gender:'M'},
+        {name:'Rachel',age:20,gender:'F'}
+    ];
+
+    _.each(x,function(element,index,list){
+        list[index]=  element.age;
+    });
+
+    console.log("original"+JSON.stringify(x));
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <script src="underscore.js"></script>
+</head>
+<body>
+
+
+<script>
+
+
+
+    var x = ["mike","john","rachel","harvey"];
+
+   var result =  _.without(x,"john","harvey");
+
+    console.log("original "+JSON.stringify(x));
+    console.log("result "+JSON.stringify(result));
+
+   var array1 = ["mike","john"];
+
+   var array2 = ["abc","xyz"];
+
+   var array3 = ["mike","harvey"];
+
+
+   var result =  _.union(array1,array2,array3);
+
+   console.log("original"+JSON.stringify(array1));
+   console.log("original"+JSON.stringify(array2));
+   console.log("original"+JSON.stringify(array3));
+   console.log("result"+JSON.stringify(result));
+
+
+    var x = ["mike","john","john","mike","mike","john","john"];
+
+    var result =  _.uniq(x);
+
+    console.log("original "+JSON.stringify(x));
+    console.log("result "+JSON.stringify(result));
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <script src="underscore.js"></script>
+</head>
+<body>
+
+
+<script>
+
+
+    var obj = {
+        name : "Tabish",
+        email: "tabish@gmail.com",
+        is_verified:true,
+        password :"clickpass"
+    };
+
+
+
+
+    var result1 = _.keys(obj);
+    console.log("result1" , result1);
+
+
+    var result2 = _.values(obj);
+    console.log("result2" , result2);
+
+
+    var result3 = _.pick(obj,"name","email");
+    console.log("result3" , result3);
+
+    var result4 = _.omit(obj,"password");
+    console.log("result4" , result4);
+
+    var result5 = _.has(obj,"name");
+    console.log("result5" , result5);
+
+    var result6 = _.has(obj,"phone");
+    console.log("result6" , result6);
+
+
+    var obj1 = {
+        name : "Tabish",
+        email: "tabish@gmail.com",
+        is_verified:true,
+        password :"clickpass"
+    };
+
+    console.log("result7 ",obj==obj1);
+
+    var result8 = _.isEqual(obj,obj1);
+    console.log("result8" , result8);
+
+
+    var result9 = _.clone(obj);
+    obj.email="xyz@gmail.com";
+    console.log("original" , obj);
+    console.log("result9" , result9);
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

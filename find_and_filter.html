@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <script src="underscore.js"></script>
+</head>
+<body>
+
+
+<script>
+
+
+
+    var x = [
+        {name:'John',age:22,gender:'M'},
+        {name:'Mike',age:30,gender:'M'},
+        {name:'Rachel',age:20,gender:'F'}
+    ];
+
+   var result =  _.find(x,function(element){
+        return element.gender==="M";
+    });
+
+    console.log("original"+JSON.stringify(x));
+    console.log("result"+JSON.stringify(result));
+
+   var x = [
+       {name:'John',age:22,gender:'M'},
+       {name:'Mike',age:30,gender:'M'},
+       {name:'Rachel',age:20,gender:'F'}
+   ];
+
+   var result =  _.filter(x,function(element){
+       return element.gender==="M";
+   });
+
+   console.log("original"+JSON.stringify(x));
+   console.log("result"+JSON.stringify(result));
+
+
+
+
+
+</script>
+
+</body>
+</html>
